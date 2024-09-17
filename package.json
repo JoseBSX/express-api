@@ -1,0 +1,40 @@
+{
+  "description": "Express API",
+  "license": "UNLICENSED",
+  "main": "index.js",
+  "name": "express-api",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "author": {
+    "name": "José Beltrán Solís",
+    "email": "j.beltran@live.com.mx"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv-flow": "^4.1.0",
+    "express": "^4.21.0",
+    "http-status-codes": "^2.3.0",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.9.0",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.10.0",
+    "@stylistic/eslint-plugin-js": "^2.8.0",
+    "eslint": "^9.10.0",
+    "globals": "^15.9.0",
+    "nodemon": "^3.1.4"
+  },
+  "keywords": [
+    "API"
+  ],
+  "scripts": {
+    "dev": "nodemon src/index.mjs",
+    "lint": "eslint 'src/**/*.{js,mjs}'",
+    "lint:fix": "eslint 'src/**/*.{js,mjs}' --fix",
+    "start": "node src/index.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
